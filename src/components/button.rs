@@ -1,5 +1,4 @@
 use leptos::*;
-use web_sys::MouseEvent;
 
 use crate::components::svg::ButtonSvg;
 
@@ -8,7 +7,6 @@ use crate::components::svg::ButtonSvg;
 pub fn Button(
     #[prop(default = "".to_string())] class: String,
     #[prop(optional)] href: Option<String>,
-    // #[prop(into)] on_click: Callback<MouseEvent>,
     children: Children,
     #[prop(default = "px-7".to_string())] px: String,
     #[prop(default = false)] white: bool,

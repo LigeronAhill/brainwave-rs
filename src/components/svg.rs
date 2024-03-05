@@ -110,3 +110,27 @@ pub fn MenuSvg(open_navigation: ReadSignal<bool>) -> impl IntoView {
         </svg>
     }
 }
+#[component]
+pub fn PlusSvg(#[prop(optional, into)] class_name: String) -> impl IntoView {
+    view! {
+        <svg class=class_name width="11" height="11" fill="none">
+            <path
+                d="M7 1a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v2a1 1 0 0 1-1 1H1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V8a1 1 0 0 1 1-1h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H8a1 1 0 0 1-1-1V1z"
+                fill="#ada8c4"
+            ></path>
+        </svg>
+    }
+}
+#[component]
+pub fn SectionSvg(#[prop(optional, into)] crosses_offset: String) -> impl IntoView {
+    view! {
+        <>
+            <PlusSvg class_name=format!(
+                "hidden absolute -top-[0.3125rem] left-[1.5625rem] pointer-events-none lg:block xl:left-[2.1875rem] {crosses_offset}",
+            )/>
+            <PlusSvg class_name=format!(
+                "hidden absolute -top-[0.3125rem] right-[1.5625rem] pointer-events-none lg:block xl:left-[2.1875rem] {crosses_offset}",
+            )/>
+        </>
+    }
+}

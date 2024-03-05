@@ -2,7 +2,7 @@ use leptos::*;
 use leptos_router::use_location;
 
 use crate::{
-    components::{button::Button, design::HamburgerMenu, svg::MenuSvg},
+    components::{button::Button, design::hamburger::HamburgerMenu, svg::MenuSvg},
     constants::NavLink,
 };
 
@@ -38,7 +38,7 @@ pub fn Header() -> impl IntoView {
                             .map(|n| {
                                 let mobile_class = if n.only_mobile { "lg:hidden" } else { "" };
                                 let url_class = move || {
-                                    if n.url.to_string() == path_name.hash.get_untracked() {
+                                    if *n.url == path_name.hash.get_untracked() {
                                         "z-2 lg:text-n-1"
                                     } else {
                                         "lg:text-n-1/50"
@@ -60,6 +60,7 @@ pub fn Header() -> impl IntoView {
                                 }
                             })
                             .collect_view()}
+
                     </div>
                     <HamburgerMenu/>
                 </nav>

@@ -1,8 +1,11 @@
+pub mod benefits;
 pub mod button;
+pub mod collaboration;
 pub mod company_logos;
 pub mod design;
 pub mod generating;
 pub mod header;
+pub mod heading;
 pub mod hero;
 pub mod notification;
 pub mod section;

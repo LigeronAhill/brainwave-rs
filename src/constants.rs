@@ -120,3 +120,160 @@ pub const ROADMAP: [Roadmap; 4] = [
   },
 ];
 pub const COLLABTEXT: &str = "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+
+pub struct CollabContent<'a> {
+    pub id: &'a str,
+    pub title: &'a str,
+    pub text: &'a str,
+}
+
+pub const COLLAB_CONTENT: [CollabContent; 3] = [
+    CollabContent {
+        id: "0",
+        title: "Seamless Intrgration",
+        text: COLLABTEXT,
+    },
+    CollabContent {
+        id: "1",
+        title: "Smart Automation",
+        text: "",
+    },
+    CollabContent {
+        id: "2",
+        title: "Top-notch Security",
+        text: "",
+    },
+];
+
+pub struct CollabApp<'a> {
+    pub id: &'a str,
+    pub title: &'a str,
+    pub icon: &'a str,
+    pub width: i32,
+    pub height: i32,
+}
+
+pub const COLLAB_APPS: [CollabApp; 8] = [
+    CollabApp {
+        id: "0",
+        title: "Figma",
+        icon: "/public/collaboration/figma.png",
+        width: 26,
+        height: 36,
+    },
+    CollabApp {
+        id: "1",
+        title: "Notion",
+        icon: "/public/collaboration/notion.png",
+        width: 34,
+        height: 36,
+    },
+    CollabApp {
+        id: "2",
+        title: "Discord",
+        icon: "/public/collaboration/discord.png",
+        width: 36,
+        height: 28,
+    },
+    CollabApp {
+        id: "3",
+        title: "Slack",
+        icon: "/public/collaboration/slack.png",
+        width: 34,
+        height: 35,
+    },
+    CollabApp {
+        id: "4",
+        title: "Photoshop",
+        icon: "/public/collaboration/photoshop.png",
+        width: 34,
+        height: 34,
+    },
+    CollabApp {
+        id: "5",
+        title: "Protopie",
+        icon: "/public/collaboration/protopie.png",
+        width: 34,
+        height: 34,
+    },
+    CollabApp {
+        id: "6",
+        title: "Framer",
+        icon: "/public/collaboration/framer.png",
+        width: 26,
+        height: 34,
+    },
+    CollabApp {
+        id: "7",
+        title: "Raindrop",
+        icon: "/public/collaboration/raindrop.png",
+        width: 38,
+        height: 32,
+    },
+];
+
+pub struct BenefitsList<'a> {
+    pub id: &'a str,
+    pub title: &'a str,
+    pub text: &'a str,
+    pub background_url: &'a str,
+    pub icon_url: &'a str,
+    pub image_url: &'a str,
+    pub light: bool,
+}
+pub const BENEFITS: [BenefitsList; 6] = [
+  BenefitsList {
+    id: "0",
+    title: "Ask anything",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    background_url: "/public/benefits/card-1.svg",
+    icon_url: "/public/benefits/icon-1.svg",
+    image_url: "/public/benefits/image-2.png",
+    light: false,
+  },
+  BenefitsList {
+    id: "1",
+    title: "Improve everyday",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    background_url: "/public/benefits/card-2.svg",
+    icon_url: "/public/benefits/icon-2.svg",
+    image_url: "/public/benefits/image-2.png",
+    light: true,
+  },
+  BenefitsList {
+    id: "2",
+    title: "Connect everywhere",
+    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    background_url: "/public/benefits/card-3.svg",
+    icon_url: "/public/benefits/icon-3.svg",
+    image_url: "/public/benefits/image-2.png",
+    light: false,
+  },
+  BenefitsList {
+    id: "3",
+    title: "Fast responding",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    background_url: "/public/benefits/card-4.svg",
+    icon_url: "/public/benefits/icon-4.svg",
+    image_url: "/public/benefits/image-2.png",
+    light: true,
+  },
+  BenefitsList {
+    id: "4",
+    title: "Ask anything",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    background_url: "/public/benefits/card-5.svg",
+    icon_url: "/public/benefits/icon-1.svg",
+    image_url: "/public/benefits/image-2.png",
+    light: false,
+  },
+  BenefitsList {
+    id: "5",
+    title: "Improve everyday",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    background_url: "/public/benefits/card-6.svg",
+    icon_url: "/public/benefits/icon-2.svg",
+    image_url: "/public/benefits/image-2.png",
+    light: false,
+  },
+];

@@ -2,7 +2,10 @@ use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
 
-use crate::components::{header::Header, hero::Hero, svg::ButtonGradient};
+use crate::components::{
+    benefits::Benefits, collaboration::Collaboration, header::Header, hero::Hero,
+    svg::ButtonGradient,
+};
 
 #[component]
 pub fn app() -> impl IntoView {
@@ -24,6 +27,8 @@ fn home() -> impl IntoView {
         <div class="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
             <Header/>
             <Hero/>
+            <Benefits/>
+            <Collaboration/>
         </div>
         <ButtonGradient/>
     }

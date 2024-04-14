@@ -130,7 +130,7 @@ pub struct CollabContent<'a> {
 pub const COLLAB_CONTENT: [CollabContent; 3] = [
     CollabContent {
         id: "0",
-        title: "Seamless Intrgration",
+        title: "Seamless Intergration",
         text: COLLABTEXT,
     },
     CollabContent {

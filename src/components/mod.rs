@@ -9,4 +9,6 @@ pub mod heading;
 pub mod hero;
 pub mod notification;
 pub mod section;
+pub mod services;
 pub mod svg;
+pub mod tagline;

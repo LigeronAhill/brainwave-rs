@@ -4,11 +4,11 @@ use leptos_router::*;
 
 use crate::components::{
     benefits::Benefits, collaboration::Collaboration, header::Header, hero::Hero,
-    svg::ButtonGradient,
+    services::Services, svg::ButtonGradient,
 };
 
 #[component]
-pub fn app() -> impl IntoView {
+pub fn App() -> impl IntoView {
     provide_meta_context();
 
     view! {
@@ -22,13 +22,15 @@ pub fn app() -> impl IntoView {
     }
 }
 #[component]
-fn home() -> impl IntoView {
+fn Home() -> impl IntoView {
     view! {
-        <div class="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <div class="pt-20 overflow-hidden">
+            // <div class="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
             <Header/>
             <Hero/>
             <Benefits/>
             <Collaboration/>
+            <Services/>
         </div>
         <ButtonGradient/>
     }

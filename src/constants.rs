@@ -277,3 +277,83 @@ pub const BENEFITS: [BenefitsList; 6] = [
     light: false,
   },
 ];
+pub struct Pricing<'a> {
+    pub id: &'a str,
+    pub title: &'a str,
+    pub description: &'a str,
+    pub price: Option<&'a str>,
+    pub features: [&'a str; 3],
+}
+pub const PRICING: [Pricing; 3] = [
+    Pricing {
+        id: "0",
+        title: "Basic",
+        description: "AI chatbot, personalized recommendations",
+        price: Some("0"),
+        features: [
+            "An AI chatbot that can understand your queries",
+            "Personalized recommendations based on your preferences",
+            "Ability to explore the app and its features without any cost",
+        ],
+    },
+    Pricing {
+        id: "1",
+        title: "Premium",
+        description: "Advanced AI chatbot, priority support, analytics dashboard",
+        price: Some("9.99"),
+        features: [
+            "An advanced AI chatbot that can understand complex queries",
+            "An analytics dashboard to track your conversations",
+            "Priority support to solve issues quickly",
+        ],
+    },
+    Pricing {
+        id: "2",
+        title: "Enterprise",
+        description: "Custom AI chatbot, advanced analytics, dedicated account",
+        price: None,
+        features: [
+            "An AI chatbot that can understand your queries",
+            "Personalized recommendations based on your preferences",
+            "Ability to explore the app and its features without any cost",
+        ],
+    },
+];
+pub struct Social<'a> {
+    pub id: &'a str,
+    pub title: &'a str,
+    pub icon: &'a str,
+    pub url: &'a str,
+}
+pub const SOCIALS: [Social; 5] = [
+    Social {
+        id: "0",
+        title: "Discord",
+        icon: "/public/socials/discord.svg",
+        url: "#",
+    },
+    Social {
+        id: "1",
+        title: "Twitter",
+        icon: "/public/socials/twitter.svg",
+        url: "#",
+    },
+    Social {
+        id: "2",
+        title: "Instagram",
+        icon: "/public/socials/instagram.svg",
+        url: "#",
+    },
+    Social {
+        id: "3",
+        title: "Telegram",
+        icon: "/public/socials/telegram.svg",
+        url: "#",
+    },
+    Social {
+        id: "4",
+        title: "Facebook",
+        icon: "/public/socials/facebook.svg",
+        url: "#",
+    },
+];

@@ -99,6 +99,7 @@ pub fn Services() -> impl IntoView {
                                                         "rounded-2xl flex items-center justify-center {index_class}",
                                                     )
                                                 >
+
                                                     <div class=div_class>
                                                         <img src=icon alt=icon width=24 height=24/>
                                                     </div>

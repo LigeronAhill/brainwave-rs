@@ -3,8 +3,8 @@ use leptos_meta::*;
 use leptos_router::*;
 
 use crate::components::{
-    benefits::Benefits, collaboration::Collaboration, header::Header, hero::Hero,
-    services::Services, svg::ButtonGradient,
+    benefits::Benefits, collaboration::Collaboration, footer::Footer, header::Header, hero::Hero,
+    pricing::Pricing, roadmap::Roadmap, services::Services, svg::ButtonGradient,
 };
 
 #[component]
@@ -25,12 +25,14 @@ pub fn App() -> impl IntoView {
 fn Home() -> impl IntoView {
     view! {
         <div class="pt-20 overflow-hidden">
-            // <div class="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
             <Header/>
             <Hero/>
             <Benefits/>
             <Collaboration/>
             <Services/>
+            <Pricing/>
+            <Roadmap/>
+            <Footer/>
         </div>
         <ButtonGradient/>
     }

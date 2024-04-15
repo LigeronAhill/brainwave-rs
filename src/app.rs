@@ -12,7 +12,6 @@ pub fn App() -> impl IntoView {
     provide_meta_context();
 
     view! {
-        // <Stylesheet id="leptos" href="/style/output.css"/>
         <Link rel="shortcut icon" type_="image/svg+xml" href="public/brainwave-symbol.svg"/>
         <Router>
             <Routes>

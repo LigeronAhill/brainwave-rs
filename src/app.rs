@@ -15,7 +15,7 @@ pub fn App() -> impl IntoView {
         <Link rel="shortcut icon" type_="image/svg+xml" href="public/brainwave-symbol.svg"/>
         <Router>
             <Routes>
-                // <Route path="/" view=move || view! { <Home/> }/>
+                <Route path="/" view=move || view! { <Home/> }/>
                 <Route path="/*any" view= || view! { <Home/> }/>
                 // <Route path="/*any" view= || view! { <h1>"Not Found!"</h1> }/>
             </Routes>

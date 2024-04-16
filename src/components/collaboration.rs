@@ -21,7 +21,7 @@ pub fn Collaboration() -> impl IntoView {
                                         <li class="mb-3 py-3" key="{item.id}">
                                             <div class="flex items-center">
                                                 <img
-                                                    src="/public/check.svg"
+                                                    src="public/check.svg"
                                                     width=24
                                                     height=24
                                                     alt="check"
@@ -35,7 +35,7 @@ pub fn Collaboration() -> impl IntoView {
                                         <li class="mb-3 py-3" key="{item.id}">
                                             <div class="flex items-center">
                                                 <img
-                                                    src="/public/check.svg"
+                                                    src="public/check.svg"
                                                     width=24
                                                     height=24
                                                     alt="check"
@@ -60,7 +60,7 @@ pub fn Collaboration() -> impl IntoView {
                             <div class="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                                 <div class="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                                     <img
-                                        src="/public/brainwave-symbol.svg"
+                                        src="public/brainwave-symbol.svg"
                                         alt="brainwave"
                                         width=48
                                         height=48
@@ -102,7 +102,7 @@ pub fn Collaboration() -> impl IntoView {
                         </ul>
                         <div class="hidden absolute top-1/2 right-full w-[32.625rem] -mt-1 mr-10 pointer-events-none xl:block">
                             <img
-                                src="/public/collaboration/curve-1.svg"
+                                src="public/collaboration/curve-1.svg"
                                 alt="Curve 1"
                                 width=522
                                 height=182
@@ -110,7 +110,7 @@ pub fn Collaboration() -> impl IntoView {
                         </div>
                         <div class="hidden absolute top-1/2 left-full w-[10.125rem] -mt-1 ml-10 pointer-events-none xl:block">
                             <img
-                                src="/public/collaboration/curve-2.svg"
+                                src="public/collaboration/curve-2.svg"
                                 alt="Curve 2"
                                 width=162
                                 height=76

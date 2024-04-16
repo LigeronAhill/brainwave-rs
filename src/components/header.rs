@@ -22,7 +22,7 @@ pub fn Header() -> impl IntoView {
         })>
             <div class="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
                 <a href="#hero" class="block w-[12rem] xl:mr-8">
-                    <img src="/public/brainwave.svg" alt="Brainwave"/>
+                    <img src="public/brainwave.svg" alt="Brainwave"/>
                 </a>
 
                 <nav class=(move || {

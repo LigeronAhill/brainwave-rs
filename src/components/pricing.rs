@@ -9,7 +9,7 @@ pub fn Pricing() -> impl IntoView {
             <div class="container relative z-2">
                 <div class="hidden relative justify-center mb-[6.5rem] lg:flex">
                     <img
-                        src="/public/4-small.png"
+                        src="public/4-small.png"
                         class="relative z-1"
                         width=255
                         height=255
@@ -17,7 +17,7 @@ pub fn Pricing() -> impl IntoView {
                     />
                     <div class="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
                         <img
-                            src="/public/pricing/stars.svg"
+                            src="public/pricing/stars.svg"
                             class="w-full"
                             width=950
                             height=400
@@ -51,7 +51,7 @@ pub fn Pricing() -> impl IntoView {
 pub fn LeftLine() -> impl IntoView {
     view! {
         <div class="hidden lg:block absolute top-1/2 right-full w-[92.5rem] h-[11.0625rem] -translate-y-1/2 pointer-events-none">
-            <img class="w-full" src="/public/pricing/lines.svg" width=1480 height=177 alt="Lines"/>
+            <img class="w-full" src="public/pricing/lines.svg" width=1480 height=177 alt="Lines"/>
         </div>
     }
 }
@@ -59,7 +59,7 @@ pub fn LeftLine() -> impl IntoView {
 pub fn RightLine() -> impl IntoView {
     view! {
         <div class="hidden lg:block absolute top-1/2 left-full w-[92.5rem] h-[11.0625rem] -translate-y-1/2 -scale-x-100 pointer-events-none">
-            <img class="w-full" src="/public/pricing/lines.svg" width=1480 height=177 alt="Lines"/>
+            <img class="w-full" src="public/pricing/lines.svg" width=1480 height=177 alt="Lines"/>
         </div>
     }
 }

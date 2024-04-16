@@ -27,7 +27,7 @@ pub fn Hero() -> impl IntoView {
                         <span class="inline-block relative">
                             "Brainwave"
                             <img
-                                src="/public/hero/curve.png"
+                                src="public/hero/curve.png"
                                 class="absolute top-full left-0 w-full xl:-mt-2"
                                 width=624
                                 height=28
@@ -49,7 +49,7 @@ pub fn Hero() -> impl IntoView {
 
                             <div class="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                                 <img
-                                    src="/public/hero/robot.jpg"
+                                    src="public/hero/robot.jpg"
                                     className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
                                     width=1024
                                     height=490
@@ -84,7 +84,7 @@ pub fn Hero() -> impl IntoView {
                     </div>
                     <div class="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
                         <img
-                            src="/public/hero/hero-background.jpg"
+                            src="public/hero/hero-background.jpg"
                             class="w-full"
                             width=1440
                             height=1800

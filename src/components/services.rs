@@ -18,7 +18,7 @@ pub fn Services() -> impl IntoView {
                     <div class="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overfow-hidden lg:p-20 xl:h-[46rem]">
                         <div class="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
                             <img
-                                src="/public/services/service-1.png"
+                                src="public/services/service-1.png"
                                 alt="Smartest AI"
                                 class="w-full h-full object-cover md:object-right"
                                 width=800
@@ -36,7 +36,7 @@ pub fn Services() -> impl IntoView {
                                         view! {
                                             <li key=s class="flex items-start py-6 border-t border-n-6">
                                                 <img
-                                                    src="/public/check.svg"
+                                                    src="public/check.svg"
                                                     alt="check"
                                                     width=24
                                                     height=24
@@ -55,7 +55,7 @@ pub fn Services() -> impl IntoView {
                         <div class="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
                             <div class="absolute inset-0">
                                 <img
-                                    src="/public/services/service-2.png"
+                                    src="public/services/service-2.png"
                                     alt="robot"
                                     class="h-full w-full object-cover"
                                     width=630
@@ -113,7 +113,7 @@ pub fn Services() -> impl IntoView {
                             <div class="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                                 <img
                                     class="w-full h-full object-cover"
-                                    src="/public/services/service-3.png"
+                                    src="public/services/service-3.png"
                                     alt="Scary robot"
                                     width=520
                                     height=400
@@ -160,7 +160,7 @@ pub fn Gradient() -> impl IntoView {
         <div class="absolute top-0 -left-[10rem] w-[56.625rem] h-[56.625rem] opacity-50 mix-blend-color-dodge pointer-events-none">
             <img
                 class="absolute top-1/2 left-1/2 w-[79.5625rem] max-w-[79.5625rem] h-[88.5625rem] -translate-x-1/2 -translate-y-1/2"
-                src="/public/gradient.png"
+                src="public/gradient.png"
                 width=1417
                 height=1417
                 alt="Gradient"
@@ -174,7 +174,7 @@ pub fn VideoChatMessage() -> impl IntoView {
         <div class="absolute top-8 left-[3.125rem] w-full max-w-[14rem] pt-2.5 pr-2.5 pb-7 pl-5 bg-n-6 rounded-t-xl rounded-br-xl font-code text-base md:max-w-[17.5rem]">
             "Video generated!"
             <div class="absolute left-5 -bottom-[1.125rem] flex items-center justify-center w-[2.25rem] h-[2.25rem] bg-color-1 rounded-[0.75rem]">
-                <img src="/public/brainwave-symbol-white.svg" width=26 height=26 alt="Brainwave"/>
+                <img src="public/brainwave-symbol-white.svg" width=26 height=26 alt="Brainwave"/>
             </div>
             <p class="tagline absolute right-2.5 bottom-1 text-[0.625rem] text-n-3 uppercase">
                 "just now"
@@ -190,7 +190,7 @@ pub fn VideoChatMessage() -> impl IntoView {
 pub fn VideoBar() -> impl IntoView {
     view! {
         <div class="absolute left-0 bottom-0 w-full flex items-center p-6">
-            <img src="/public/play.svg" width=24 height=24 alt="Play" class="object-contain mr-3"/>
+            <img src="public/play.svg" width=24 height=24 alt="Play" class="object-contain mr-3"/>
 
             <div class="flex-1 bg-[#D9D9D9]">
                 <div class="w-1/2 h-0.5 bg-color-1"></div>

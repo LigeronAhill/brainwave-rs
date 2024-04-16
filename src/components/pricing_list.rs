@@ -64,7 +64,7 @@ fn PricingItem(item: Pricing<'static>) -> impl IntoView {
                     .map(|(index, feature)| {
                         view! {
                             <li key=index class="flex items-start py-5 border-t border-n-6">
-                                <img src="/public/check.svg" width=24 height=24 alt="Check"/>
+                                <img src="public/check.svg" width=24 height=24 alt="Check"/>
                                 <p class="body-2 ml-4">{feature.to_string()}</p>
                             </li>
                         }

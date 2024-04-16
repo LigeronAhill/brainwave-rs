@@ -33,7 +33,7 @@ pub fn Roadmap() -> impl IntoView {
 #[component]
 fn RoadmapItem(item: Roadmap<'static>) -> impl IntoView {
     let (status, img) = if item.status == "done" {
-        ("Done", "/public/check-02.svg")
+        ("Done", "public/check-02.svg")
     } else {
         ("In progress", "public/loading-01.svg")
     };
@@ -49,7 +49,7 @@ fn RoadmapItem(item: Roadmap<'static>) -> impl IntoView {
         >
             <div class="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
                 <div class="absolute top-0 left-0 max-w-full">
-                    <img class="w-full" src="/public/grid.png" width=550 height=550 alt="Grid"/>
+                    <img class="w-full" src="public/grid.png" width=550 height=550 alt="Grid"/>
                 </div>
                 <div class="relative z-1">
                     <div class="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">

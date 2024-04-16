@@ -35,7 +35,7 @@ pub fn HamburgerMenu() -> impl IntoView {
             <div class="absolute inset-0 opacity-[.03]">
                 <img
                     class="w-full h-full object-cover"
-                    src="/public/background.jpg"
+                    src="public/background.jpg"
                     width=688
                     height=953
                     alt="Background"

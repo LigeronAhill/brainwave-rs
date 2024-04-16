@@ -1,8 +1,8 @@
-[build]
-release = true
-dist = "dist"
-public_url = "/brainwave-rs/"
-filehash = false
+# [build]
+# release = true
+# dist = "dist"
+# public_url = "/brainwave-rs/"
+# filehash = false
 # [[hooks]]
 # stage = "pre_build"
 # command = "sh"
